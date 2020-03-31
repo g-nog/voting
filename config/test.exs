@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :voting, Voting.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "changeme",
   database: "voting_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
