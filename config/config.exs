@@ -23,6 +23,10 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+config :voting, VotingWeb.Guardian,
+  issuer: "voting",
+  secret_key: "lZclI59po7ghqUJEOt7e6KKVAiZVxijOHw0l1pofmzCiViK9AjpWXJy4Gp6HsaHt"
+
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
